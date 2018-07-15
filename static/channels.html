@@ -1,0 +1,32 @@
+
+  <h1 class="h">CHANNELS</h1>
+
+  <div  class="form-group">
+    <form action = "http://localhost:5000/result" method = "POST">
+  <div class="row">
+    <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+      <input type="text" placeholder="Enter " class="sea" name="get_e"  ng-model="get_e" required>
+      </div>
+       <input type="text" placeholder="Enter Location" class="sea1" name="get_loc"  ng-model="get_loc">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+
+      </div>
+  </div>
+</form>
+</div>
+
+<div class="row">
+  <div class="col-sm-4"></div>
+    <div class="col-sm-5">
+  <span ng-repeat="ch in chan ">
+    <button class="button"  class="f" ng-click='updatechannels(ch)'>{{ch}}</button>
+  <br ng-if="!(($index + 1) % 3)" />
+</span>
+</div>
+</div>{{score}}
+
+
+<a href="#downloadcsv"><center><button class="btn btn-danger" style="margin-top: 40px;margin-right:60px; width: 180px;font-size: 20px;" ng-click="getdata();insert()">search</button> </center></a><br>
+

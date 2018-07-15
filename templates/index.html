@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+	
+
+<title></title>
+</head>
+
+<body ng-controller="mainctrl">
+<!-- Ng-VIEW  -->
+
+<div id="main">
+	
+<div ng-view></div>
+</div>
+
+<!-- END OF Ng-VIEW  -->
+<script type="text/javascript" src="{{ url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='angular.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='angular-route.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='checklist-model.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='route.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='controller/mainctrl.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='controller/download.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='controller/result.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='service.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='bootstrap.min.js')}}"></script>
+
+</body>
+</html>

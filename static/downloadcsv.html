@@ -1,0 +1,13 @@
+
+
+	<h1 class="h">CHANNELS LINK</h1>
+ <div ng-repeat="channels in channels">
+  <h1 class="hh">{{channels}}</h1>
+  <div ng-repeat="val in data1[channels] track by $index">
+      <label class="la"><input type="checkbox" class="inc" checklist-model="getRoles()" checklist-value="{{val}}" ng-checked="csv.indexOf(val) > 10" ng-change="check(val,checked)">
+     <a href="{{val}}" target="_blank">{{val}}</a>
+     </label>
+	 </div>
+	 <br>
+</div>
+<a href="#result"> <center><button class="btn btn-danger" style="margin-top: 40px; margin-right: 80px;" ng-click='downloadCSV( )'>SCORE</button> </center></a>
